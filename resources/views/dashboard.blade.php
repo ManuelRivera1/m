@@ -28,12 +28,12 @@
 
 </div>
 <script>
-    alert("hola");
-    Swal.fire(
-  'Bienvenido',
-  'Da click en ok para continuar',
-  'success'
-)
+    // alert("hola");
+//     Swal.fire(
+//   'Bienvenido',
+//   'Da click en ok para continuar',
+//   'success'
+// )
 $("#btnNuevos").click(function(){
     $('#img').remove();
     // $("#formModules").trigger("reset");
@@ -44,9 +44,11 @@ $("#btnNuevos").click(function(){
     id=null;
     opcion = 1; //alta
 });
-window.livewire.on('#modulosave', () => {
-            $('#modal').modal('hide');
-        });
+$("#modulosave").click(function(e){
+    $('#modalMODULES').modal('hide');
+
+});
+
 
 </script>
 </x-app-layout>

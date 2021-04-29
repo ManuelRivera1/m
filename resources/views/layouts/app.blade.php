@@ -10,6 +10,8 @@
 
     <title>MC ENTERPRISE</title>
 
+    {{-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> --}}
+    <script src="{{ asset('vendor/dashboard/vendor/jquery/jquery.min.js') }}"></script>
     <!-- Custom fonts for this template-->
     <link href="{{ asset('vendor/dashboard/vendor/fontawesome-free/css/all.min.css') }}" rel="stylesheet"
         type="text/css">
@@ -349,7 +351,7 @@
 
     @livewireScripts
     <!-- Bootstrap core JavaScript-->
-    <script src="{{ asset('vendor/dashboard/vendor/jquery/jquery.min.js') }}"></script>
+
     <script src="{{ asset('vendor/dashboard/vendor/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
     <script src="{{ asset('vendor/popper/popper.min.js') }}"></script>
     <script src="{{ asset('vendor/bootstrap/js/bootstrap.min.js') }}"></script>
@@ -360,7 +362,7 @@
     <!-- Custom scripts for all pages-->
     <script src="{{ asset('vendor/dashboard/js/sb-admin-2.min.js') }}"></script>
     <!-- notificacion escritorio -->
-    <script src="{{ asset('vendor/dashboard/https://cdnjs.cloudflare.com/ajax/libs/push.js/0.0.11/push.min.js') }}">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/push.js/0.0.11/push.min.js">
     </script>
 
 

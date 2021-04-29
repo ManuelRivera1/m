@@ -1,6 +1,4 @@
 <div>
-    {{-- The whole world belongs to you --}}
-
     <button id="btnNuevos" type="button" class="btn btn-success"  data-toggle="modal"><i class="fas fa-plus-circle" aria-hidden="true"></i></button>
 
     <!--Modal para CRUD-->
