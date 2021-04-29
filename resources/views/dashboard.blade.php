@@ -1,20 +1,51 @@
 <x-app-layout>
-    <x-slot name="header">
+    {{-- <x-slot name="header">
         <h2 class="font-semibold text-xl text-gray-800 leading-tight">
             {{ __('Dashboard') }}
         </h2>
-    </x-slot>
+    </x-slot> --}}
+<!--INICIO del cont principal-->
+<div class="container" style="background-color: #fff;">
+    <div class="container text-right">
+        <div class="row">
+            <div class="col-lg-12">
 
-    <div class="py-12">
-        <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
-            <div class="bg-white overflow-hidden shadow-xl sm:rounded-lg">
-                <table>
-                    <thead>
-                        <tr><th>hi</th></tr>
-                    </thead>
-                    <tbody><tr><td>dads</td></tr></tbody>
-                </table>
+                @livewire('modulos.create')
+
             </div>
         </div>
     </div>
+    <br>
+    <div class="container">
+            <!-- <div class="col-lg-12"> -->
+                <!-- <div class="table-responsive"> -->
+                    @livewire('modulos.index')
+                <!-- </div> -->
+            <!-- </div> -->
+
+    </div>
+
+
+</div>
+<script>
+    Swal.fire(
+  'Bienvenido',
+  'Da click en ok para continuar',
+  'success'
+)
+$("#btnNuevos").click(function(){
+    $('#img').remove();
+    // $("#formModules").trigger("reset");
+    $(".modal-header").css("background-color", "#1cc88a");
+    $(".modal-header").css("color", "white");
+    $(".modal-title").text("Nuevo Modulo");
+    $("#modalMODULES").modal("show");
+    id=null;
+    opcion = 1; //alta
+});
+window.livewire.on('#modulosave', () => {
+            $('#modal').modal('hide');
+        });
+
+</script>
 </x-app-layout>
