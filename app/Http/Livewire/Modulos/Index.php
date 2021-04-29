@@ -7,7 +7,7 @@ use App\Models\Modulos;
 
 class Index extends Component
 {
-    // protected $listeners = ['render'];
+    protected $listeners = ['render'];
     public function render()
     {
         $data = Modulos::all();

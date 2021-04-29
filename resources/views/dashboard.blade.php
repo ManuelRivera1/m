@@ -28,6 +28,7 @@
 
 </div>
 <script>
+    alert("hola");
     Swal.fire(
   'Bienvenido',
   'Da click en ok para continuar',

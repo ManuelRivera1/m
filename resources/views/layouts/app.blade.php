@@ -19,6 +19,7 @@
     <!-- <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script> -->
     <!-- Custom styles for this template-->
     <link href="{{ asset('vendor/dashboard/css/sb-admin-2.min.css') }}" rel="stylesheet">
+    <link href="{{ asset('vendor/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
 
     <!--datables CSS básico-->
     <link rel="stylesheet" type="text/css"
@@ -350,6 +351,8 @@
     <!-- Bootstrap core JavaScript-->
     <script src="{{ asset('vendor/dashboard/vendor/jquery/jquery.min.js') }}"></script>
     <script src="{{ asset('vendor/dashboard/vendor/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
+    <script src="{{ asset('vendor/popper/popper.min.js') }}"></script>
+    <script src="{{ asset('vendor/bootstrap/js/bootstrap.min.js') }}"></script>
 
     <!-- Core plugin JavaScript-->
     <script src="{{ asset('vendor/dashboard/vendor/jquery-easing/jquery.easing.min.js') }}"></script>
